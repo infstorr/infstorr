@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>INFSTORE — Laptopy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --bg:#f5fbff;
+      --accent:#2b7ccf;
+      --accent-2:#0b5ea8;
+      --muted:#7a8794;
+      --card-bg:#ffffff;
+      --radius:14px;
+      --max-width:1200px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter;background:var(--bg);color:#0b1823}
+    a{text-decoration:none;color:inherit}
+
+    .wrap{max-width:var(--max-width);margin:40px auto;padding:0 20px}
+
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .logo{display:flex;align-items:center;gap:14px}
+    .logo-mark{width:64px;height:48px;background:linear-gradient(90deg,var(--accent),var(--accent-2));border-radius:10px;display:grid;place-items:center;color:white;font-weight:800;font-size:22px}
+    .brand{font-weight:700;font-size:20px}
+
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{color:var(--muted);font-weight:600}
+
+    h1{margin:0 0 20px;font-size:34px;color:#0f2b44}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px;margin-top:20px}
+    .card{background:var(--card-bg);border-radius:var(--radius);padding:18px;box-shadow:0 6px 20px rgba(12,20,35,0.08);display:flex;flex-direction:column;justify-content:space-between}
+    .thumb{width:100%;height:160px;border-radius:12px;background:#e9f3ff;display:grid;place-items:center;font-size:46px}
+    .name{font-weight:700;margin:12px 0 4px;color:#0f2b44}
+    .spec{color:var(--muted);font-size:14px;margin-bottom:12px}
+    .price{font-weight:800;font-size:20px;margin-bottom:14px;color:var(--accent-2)}
+    .btn-buy{background:var(--accent);padding:10px 14px;text-align:center;border-radius:10px;color:white;font-weight:700}
+
+    @media(max-width:600px){h1{font-size:28px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <div class="logo-mark">∞</div>
+        <div class="brand">INFSTORE</div>
+      </div>
+      <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="laptopy.html" style="color:var(--accent-2);font-weight:700">Laptopy</a>
+        <a href="smartfony.html">Smartfony</a>
+        <a href="akcesoria.html">Akcesoria</a>
+        <a href="promocje.html">Promocje</a>
+      </nav>
+    </header>
+
+    <h1>Laptopy — pełna oferta</h1>
+
+    <div class="grid">
+      <div class="card">
+        <div class="thumb">💻</div>
+        <div class="name">Dell Latitude 5400</div>
+        <div class="spec">i5 • 8GB RAM • 256GB SSD • 14"</div>
+        <div class="price">1 499 zł</div>
+        <a class="btn-buy" href="#">Zobacz</a>
+      </div>
+
+      <div class="card">
+        <div class="thumb">💻</div>
+        <div class="name">HP ProBook 450 G6</div>
+        <div class="spec">i5 • 16GB RAM • 512GB SSD • 15,6"</div>
+        <div class="price">1 899 zł</div>
+        <a class="btn-buy" href="#">Zobacz</a>
+      </div>
+
+      <div class="card">
+        <div class="thumb">💻</div>
+        <div class="name">Lenovo ThinkPad T490</div>
+        <div class="spec">i7 • 16GB RAM • 512GB SSD • 14"</div>
+        <div class="price">2 399 zł</div>
+        <a class="btn-buy" href="#">Zobacz</a>
+      </div>
+
+      <div class="card">
+        <div class="thumb">💻</div>
+        <div class="name">Acer Aspire 5</div>
+        <div class="spec">Ryzen 5 • 8GB RAM • 512GB SSD • 15,6"</div>
+        <div class="price">2 199 zł</div>
+        <a class="btn-buy" href="#">Zobacz</a>
+      </div>
+
+      <div class="card">
+        <div class="thumb">💻</div>
+        <div class="name">Apple MacBook Air</div>
+        <div class="spec">M1 • 8GB RAM • 256GB SSD • 13"</div>
+        <div class="price">3 399 zł</div>
+        <a class="btn-buy" href="#">Zobacz</a>
+      </div>
+
+      <div class="card">
+        <div class="thumb">💻</div>
+        <div class="name">Asus VivoBook S14</div>
+        <div class="spec">i5 • 8GB RAM • 512GB SSD • 14"</div>
+        <div class="price">2 099 zł</div>
+        <a class="btn-buy" href="#">Zobacz</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
